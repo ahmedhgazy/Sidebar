@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sidebar</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fastly.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+    />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <header class="positon-relative; shadow">
+      <div
+        class="container py-2 d-flex justify-content-between aling-items-center"
+      >
+        <div class="logo">
+          <a>Header</a>
+        </div>
+        <ul class="p-0 m-0 list-unstyled d-flex gap-5">
+          <li class="list-item"><a class="nav-link">Link</a></li>
+          <li class="list-item"><a class="nav-link">Link</a></li>
+          <li class="list-item"><a class="nav-link">Link</a></li>
+          <li class="list-item"><a class="nav-link">Link</a></li>
+          <li class="list-item">
+            <a onclick="ToggleSidebar()" class="nav-link">
+              <i class="fa-solid fa-bars p-0 mt-1"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="sidebar sidebar-hidden left-side">
+        <div class="container">
+          <div class="row">
+            <div class="btn-div col-12 d-felx align-items-center">
+              <h5 class="m-0 py-2 text-center float-start">Sidebar</h5>
+              <a class="float-end mt-1">
+                <i onclick="ToggleSidebar()" class="fa-solid fa-xmark"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <script src="/main.js"></script>
+
+    <script
+      src="https://fastly.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
